@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Countdown</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+    .surprise { margin-top: 20px; font-size: 18px; color: #555; }
+  </style>
+</head>
+<body>
+  <h1>Countdown to [Friend's Name] Birthday!</h1>
+  <p id="surprise" class="surprise">Your daily surprises will appear here!</p>
+  <script>
+    const surprises = [
+      "Day 1: You're amazing!",
+      "Day 2: Here's a memory: [Insert Memory]",
+      "Day 3: A virtual hug just for you!",
+      // Add more surprises here
+    ];
+    const day = new Date().getDate() - [START DATE];
+    if (day >= 0 && day < surprises.length) {
+      document.getElementById("surprise").innerText = surprises[day];
+    } else {
+      document.getElementById("surprise").innerText = "Stay tuned for more!";
+    }
+  </script>
+</body>
+</html>
